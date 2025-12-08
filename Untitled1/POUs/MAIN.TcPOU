@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="MAIN" Id="{9a1d7829-2361-4322-8eee-e0f95c169571}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	bottone:BOOL:=FALSE;
+	c:INT:=0;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF(bottone= true) THEN
+	c:=c+1;
+END_IF]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
